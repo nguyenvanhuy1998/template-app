@@ -3,6 +3,7 @@ import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {screenNames} from '../constants';
 import TabNavigator from './TabNavigator';
+import TabNavigatorLearn from './TabNavigatorLearn';
 
 const Stack = createNativeStackNavigator();
 const StackNavigator = () => {
@@ -13,7 +14,7 @@ const StackNavigator = () => {
       }}>
       <Stack.Screen
         name={screenNames.Tabs}
-        component={TabNavigator}
+        component={TabNavigatorLearn}
         options={{animation: 'slide_from_bottom'}}
       />
     </Stack.Navigator>
